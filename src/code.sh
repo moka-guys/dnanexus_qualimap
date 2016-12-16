@@ -11,8 +11,8 @@ tar zxf  R_qualimap.tar.gz
 cp ./R/bin/* /usr/bin/
 
 # Prepare output folder; link all inputs there
-mkdir -p out/out/
-cd out/out/
+mkdir -p out/out/QC
+cd out/out/QC
 ln -sf ~/in/*/* .
 
 if [ -z "${output_prefix}" ]; then
